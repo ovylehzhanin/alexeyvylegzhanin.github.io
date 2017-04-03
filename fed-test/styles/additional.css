@@ -1,0 +1,29 @@
+header,
+.above,
+main,
+footer {
+	border: 1px dotted red;
+}
+
+.header-top,
+.left {
+	background-color: rgba(255, 80, 80, .5);
+}
+
+header img {
+	border: 1px dotted red;
+}
+
+.search-box {
+	border: 1px dotted red;
+}
+
+.main-menu,
+.right .product-grid {
+	background-color: rgba(0, 102, 255, .5);
+}
+
+.features li {
+	border: 1px dotted blue;
+}
+

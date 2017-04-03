@@ -1,0 +1,72 @@
+@media screen and (min-width: 1000px) {
+	
+	.header-top,
+	.header-middle,
+	.header-bottom,
+	.center,
+	main {
+		width: 90%;
+		margin: 0 auto;
+	}
+
+	.header-top .contact-info {
+		display: block;
+	}
+
+	.header-top .action {
+		position: static;
+	}
+
+		.header-top .action .hyp {
+			display: block;
+		}
+
+	.header-middle .nav-opener {
+		display: none;
+	}
+
+	.header-middle .page-logo,
+	.header-middle .search-box {
+		margin-left: 0;
+	}
+
+	.header-middle .search-box {
+		width: 50%;
+	}
+
+	.header-bottom .main-menu {
+		position: static;
+	}
+
+		.header-bottom .main-menu {
+			width: 100%;
+			display: flex;
+			flex-direction: row;
+		}
+
+	.above .heading p {
+		display: block;
+	}
+
+	main .right .product-grid .product {
+		width: 33.33%;
+	}
+
+		main .features ul li {
+			width: 25%;
+		}
+
+	main .right .recent-products li:last-child {
+		display: block;
+	}
+	
+	main .right .recent-products li {
+		width: 33.33%;
+	}
+
+	.footer-top .sitemap,
+	.footer-top .social,
+	.footer-top .subscribe {
+		width: 33.33%;
+	}
+}

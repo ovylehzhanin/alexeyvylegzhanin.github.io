@@ -1,0 +1,169 @@
+/*'Montserrat', */
+
+/*
+	(?) Better use 12 grid system
+	8.33
+	16.66
+	25
+	33.33
+	41.66
+	50
+	58.33
+	66.66
+	75
+	83.33
+	91.66
+	100
+*/
+
+/* Main */
+html, 
+body,
+header ul,
+aside ul,
+footer ul {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	font-weight: normal;
+}
+
+header ul,
+aside ul,
+.recently-viewed ul,
+.features ul, 
+footer ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	display: flex;
+	flex-direction: column;
+}
+
+.header-top {
+	display: inherit;
+	flex-direction: row;
+	justify-content: space-between;
+	order: 2;
+}
+
+	.header-top .contact-info {
+		display: none;
+	}
+
+	.header-top .action {
+		display: inherit;
+		flex-direction: column;
+	}
+		
+		.header-top .action .hyp { display: none; }
+
+		.header-top .action li { padding: .5em; }
+
+.header-middle {
+	display: inherit;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	order: 1;
+}
+
+	.header-middle .nav-opener {
+		order: 1;
+		width: 62px;
+		height: 62px;
+		background: #ccc;
+	}
+	
+	.header-middle .page-logo {
+		order: 2;
+	}
+
+	.header-middle .search-box {
+		order: 4;
+		width: 100%;
+		padding: 2em 2em;
+	}
+
+		.header-middle .input-wrapper {
+			height: 40px;
+			position: relative;
+		}
+
+		.header-middle input {
+			width: 100%;
+			height: 100%;
+			outline: none;
+			
+		}
+
+		.header-middle button {
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+		}
+
+	.header-middle .shopping-cart {
+		order: 3;
+		width: 62px;
+		height: 62px;
+		background: #ccc;
+	}
+
+.header-bottom {
+	order: 3;
+}
+
+	.header-bottom li {
+		padding: 0.5em;
+	}
+
+.above { background: #ccc; }
+
+	.above .heading p {
+		display: none;
+	}
+
+main {
+	display: flex;
+	flex-direction: column;
+}
+
+		main .right .product-grid {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+
+	main .features ul {
+		display: flex;
+		flex-direction: column;
+	}
+
+	main .right .recently-viewed h2 {
+		display: inline;
+	}
+
+	main .right .recently-viewed h2,
+	main .right .recently-viewed h2 ~ a {
+		margin-right: 1em;
+	}
+
+	main .right .recent-products {
+		display: flex;
+		flex-direction: column;
+	}
+
+.footer-top,
+.footer-bottom {
+	display: flex;
+	flex-direction: column;
+}
