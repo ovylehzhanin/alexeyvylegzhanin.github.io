@@ -1,0 +1,161 @@
+/*
+	(?) Better use 12 grid system
+	8.33
+	16.66
+	25
+	33.33
+	41.66
+	50
+	58.33
+	66.66
+	75
+	83.33
+	91.66
+	100
+*/
+
+/* Temporary styles */
+html,
+body {
+	margin: 0;
+	padding: 0;
+	min-width: 320px;
+}
+
+.above {
+	border: 1px dotted blue;
+}
+
+.recent-products {
+	background: #ddd;
+}
+
+.search-group {
+	padding: 1em;
+	background-color: #ccc;
+}
+
+.search-group input,
+.search-group button {
+	height: 40px;
+}
+
+.search-group input {
+	width: 80%;
+}
+
+.search-group button {
+	width: 20%;
+}
+
+.features {
+	width: 100%;
+	background-color: #ccc;
+}
+/* END */
+
+
+/* Main */
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-size: 14px;
+	font-family: sans-serif;
+}
+
+header,
+main,
+.product-grid,
+.recent-products,
+.footer-top,
+.footer-bottom {
+	display: flex;
+}
+
+header {
+	flex-direction: column;
+}
+
+.header-middle {
+	position: relative;
+}
+
+.above .heading p {
+	display: none;
+}
+
+.above .breadcrumb {
+	display: none;
+}
+
+main {
+	flex-direction: column;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+/* END */
+
+/* Mobile layout */
+@media screen and (min-width: 320px) {
+	
+	.header-top .action li 	{
+		padding: 0.5em 1em;
+		border: 1px dotted red;
+	}
+
+	.header-top {
+		order: 2;
+	}
+
+	.header-top .contact-info,
+	.header-top .hyp {
+		display: none;
+	}
+
+	.header-middle {
+		order: 1;
+		text-align: center;
+	}
+
+	.header-bottom {
+		order: 3;
+	}
+
+	.nav-opener, 
+	.shopping-cart {
+		position: absolute;
+		top: 0;
+		width: 40px;
+		height: 40px;
+	}
+
+	.nav-opener {
+		left: 0;
+		background-color: #ff0022;
+	}
+
+	.header-bottom nav li {
+		padding: 0.5em 1em;
+	}
+
+	.shopping-cart {
+		right: 0;
+		background-color: #2200ff;
+	}
+
+	.above {
+		padding: 0.5em 1em;	
+	}
+
+	.product-grid {
+		flex-direction: column;
+		align-items: center;
+	}
+
+}
