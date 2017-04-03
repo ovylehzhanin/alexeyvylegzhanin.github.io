@@ -158,4 +158,8 @@ ul {
 		align-items: center;
 	}
 
+	.product-grid .product {
+		border: 1px dotted #ff2200;
+	}
+
 }
