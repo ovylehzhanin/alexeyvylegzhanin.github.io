@@ -62,7 +62,17 @@ header {
 		display: inherit;
 		flex-direction: column;
 	}
-		
+
+		.header-top .action .language::before,
+		.header-top .action .my-account::before {
+			content: "";
+			display: inline-block;
+			margin-right: .5em;
+			width: 20px;
+			height: 15px;
+			background: #000;
+		}
+
 		.header-top .action .hyp { display: none; }
 
 		.header-top .action li { padding: .5em; }
@@ -122,11 +132,19 @@ header {
 	order: 3;
 }
 
-	.header-bottom li {
+	.header-bottom .main-menu li {
 		padding: 0.5em;
 	}
 
-.above { background: #ccc; }
+	.header-bottom .main-menu li a {
+		text-decoration: none;
+		text-transform: uppercase;
+	}
+
+.above { 
+	background: #ccc;
+	padding: 0.5em;
+}
 
 	.above .heading p {
 		display: none;
@@ -137,15 +155,42 @@ main {
 	flex-direction: column;
 }
 
+		main .left { 
+			padding: 0.5em;
+			box-sizing: border-box;
+		}
+
 		main .right .product-grid {
 			display: flex;
 			flex-direction: column;
 			align-items: center;
 		}
 
+		main .right .product-grid .product img,
+		main .right .product-grid .product button { 
+			display: block;
+			margin: 0 auto;
+		}
+
+		main .right .product-grid .product h3,
+		main .right .product-grid .product p {
+			text-align: center;
+		}
+
+		main .right .product-grid .product button { width: 100px; }
+
 	main .features ul {
 		display: flex;
 		flex-direction: column;
+	}
+
+		main .features ul li {
+			padding: 1em;
+			box-sizing: border-box;
+		}
+
+	main .right .recently-viewed {
+		padding: 0.5em;
 	}
 
 	main .right .recently-viewed h2 {

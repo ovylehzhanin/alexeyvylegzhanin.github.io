@@ -13,6 +13,11 @@
 			flex-direction: row;
 		}
 
+		.header-top .action .language span,
+		.header-top .action .my-account span {
+			display: none;
+		}
+
 	.header-middle {
 		order: 2;
 	}
@@ -41,6 +46,7 @@
 			top: 0;
 			left: 0;
 			width: 20%;
+			z-index: 2;
 		}
 
 	main {
@@ -122,6 +128,7 @@
 		.footer-bottom .footer-links ul {
 			display: flex;
 			flex-direction: row;
+			justify-content: space-between;
 		}
 
 }

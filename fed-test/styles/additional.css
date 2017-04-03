@@ -20,10 +20,27 @@ header img {
 
 .main-menu,
 .right .product-grid {
-	background-color: rgba(0, 102, 255, .5);
+	background-color: rgba(0, 102, 255, 1);
 }
 
 .features li {
 	border: 1px dotted blue;
 }
+
+.expander {
+	position: relative;
+	padding: .2em 0;
+	border: 1px dotted gray;
+}
+
+	.expander::after {
+		content: "click me";
+		display: inline;
+		position: absolute;
+		top: 0;
+		right: 0;
+		font-size: 12px;
+		font-weight: normal;
+		z-index: 1;
+	}
 
