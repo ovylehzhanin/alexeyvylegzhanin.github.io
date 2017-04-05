@@ -49,8 +49,7 @@ header {
 
 .header-top {
 	display: inherit;
-	flex-direction: row;
-	justify-content: space-between;
+	flex-direction: column;
 	order: 2;
 }
 
@@ -65,7 +64,7 @@ header {
 
 		.header-top .action li { 
 			height: 40px;
-			padding-left: 18px;
+			padding-left: 16px;
 			line-height: 40px;
 			font-size: 13px;
 		}
@@ -149,7 +148,7 @@ header {
 
 	.header-bottom .main-menu li a {
 		font-family: 'Pathway Gothic One', sans-serif;
-		font-size: 18px;
+		font-size: 20px;
 		line-height: 40px;
 		text-decoration: none;
 		text-transform: uppercase;
@@ -164,42 +163,69 @@ main {
 	flex-direction: column;
 }
 
-		main .left {}
+		main .left {
+			background: #ccc;
+		}
+
+		main .left .filter-opener {
+			height: 57px;
+			text-align: center;
+		}
+
+			main .left .filter-opener span {
+				position: relative;
+				font-family: 'Pathway Gothic One', sans-serif;
+				font-size: 22px;
+				line-height: 57px;
+				padding-right: 50px;
+				color: blue;
+				user-select: none;
+				text-transform: uppercase;
+			}
+
+			main .left .filter-opener span::after {
+				content: "";
+				display: block;
+				position: absolute;
+				top: 3px;
+				right: 0;
+				width: 20px;
+				height: 20px;
+				background: #000;
+			}
 
 		main .left .active-filters,
 		main .left .filter-box {
 			padding-left: 18px;
+			margin-bottom: 37px;
 		}
 
 		main .left .active-filters h3,
 		main .left .filter-box h3 {
-			height: 40px;
+			height: 25px;
 			margin: 0;
 			padding: 0;
 			font-family: 'Pathway Gothic One', sans-serif;
-			font-size: 18px;
-			line-height: 40px;
+			font-size: 20px;
+			line-height: 25px;
 			text-transform: uppercase;
 			font-weight: normal;
 		}
 
-		main .left .active-filters ul li {
-			height: 20px;
+		main .left .active-filters ul li,
+		main .left .filter-box ul li {
+			height: 24px;
 		}		
 
 		main .left .active-filters ul a,
 		main .left .active-filters a  {
 			font-size: 13px;
-			line-height: 20px;
-		}
-
-		main .left .filter-box ul li {
-			height: 20px;
-			box-shadow: 0 0 1px 0 #f00;
+			line-height: 24px;
 		}
 
 		main .left .filter-box ul li label {
-			line-height: 20px;
+			line-height: 24px;
+			user-select: none;
 		}
 
 		main .left .filter-box ul li input {

@@ -1,5 +1,7 @@
-.header-top,
-.header-middle,
-.header-bottom {
-	box-shadow: 0 0 1px 0 #f00;
+.header-top {
+	background-color: #ccc;
+}
+
+.header-top .action li {
+	box-shadow: 0 0 1px 0 #000;
 }
