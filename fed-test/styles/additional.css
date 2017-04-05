@@ -1,46 +1,5 @@
-header,
-.above,
-main,
-footer {
-	border: 1px dotted red;
-}
-
 .header-top,
-.left {
-	background-color: rgba(255, 80, 80, .5);
+.header-middle,
+.header-bottom {
+	box-shadow: 0 0 1px 0 #f00;
 }
-
-header img {
-	border: 1px dotted red;
-}
-
-.search-box {
-	border: 1px dotted red;
-}
-
-.main-menu,
-.right .product-grid {
-	background-color: rgba(0, 102, 255, 1);
-}
-
-.features li {
-	border: 1px dotted blue;
-}
-
-.expander {
-	position: relative;
-	padding: .2em 0;
-	border: 1px dotted gray;
-}
-
-	.expander::after {
-		content: "click me";
-		display: inline;
-		position: absolute;
-		top: 0;
-		right: 0;
-		font-size: 12px;
-		font-weight: normal;
-		z-index: 1;
-	}
-

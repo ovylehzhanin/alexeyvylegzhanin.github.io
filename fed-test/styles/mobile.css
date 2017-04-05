@@ -27,9 +27,9 @@ footer ul {
 }
 
 body {
-	font-family: 'Open Sans', sans-serif;
-	font-size: 14px;
-	font-weight: normal;
+	font-family: 'Oxygen', sans-serif;
+	font-size: 12px;
+	font-weight: 400;
 }
 
 header ul,
@@ -63,19 +63,24 @@ header {
 		flex-direction: column;
 	}
 
+		.header-top .action li { 
+			height: 40px;
+			padding-left: 18px;
+			line-height: 40px;
+			font-size: 13px;
+		}
+
 		.header-top .action .language::before,
 		.header-top .action .my-account::before {
 			content: "";
 			display: inline-block;
 			margin-right: .5em;
-			width: 20px;
-			height: 15px;
+			width: 16px;
+			height: 11px;
 			background: #000;
 		}
 
 		.header-top .action .hyp { display: none; }
-
-		.header-top .action li { padding: .5em; }
 
 .header-middle {
 	display: inherit;
@@ -99,7 +104,7 @@ header {
 	.header-middle .search-box {
 		order: 4;
 		width: 100%;
-		padding: 2em 2em;
+		padding: 20px 15px;
 	}
 
 		.header-middle .input-wrapper {
@@ -110,12 +115,17 @@ header {
 		.header-middle input {
 			width: 100%;
 			height: 100%;
+			padding: 0 16px;
 			outline: none;
-			
+			box-sizing: border-box;
+			font-family: inherit;
+			font-style: italic;
+			font-size: 13px;
 		}
 
 		.header-middle button {
 			position: absolute;
+			width: 55px;
 			top: 0;
 			right: 0;
 			bottom: 0;
@@ -133,31 +143,67 @@ header {
 }
 
 	.header-bottom .main-menu li {
-		padding: 0.5em;
+		height: 40px;
+		padding-left: 16px;
 	}
 
 	.header-bottom .main-menu li a {
+		font-family: 'Pathway Gothic One', sans-serif;
+		font-size: 18px;
+		line-height: 40px;
 		text-decoration: none;
 		text-transform: uppercase;
 	}
 
 .above { 
-	background: #ccc;
-	padding: 0.5em;
+	display: none;
 }
-
-	.above .heading p {
-		display: none;
-	}
 
 main {
 	display: flex;
 	flex-direction: column;
 }
 
-		main .left { 
-			padding: 0.5em;
-			box-sizing: border-box;
+		main .left {}
+
+		main .left .active-filters,
+		main .left .filter-box {
+			padding-left: 18px;
+		}
+
+		main .left .active-filters h3,
+		main .left .filter-box h3 {
+			height: 40px;
+			margin: 0;
+			padding: 0;
+			font-family: 'Pathway Gothic One', sans-serif;
+			font-size: 18px;
+			line-height: 40px;
+			text-transform: uppercase;
+			font-weight: normal;
+		}
+
+		main .left .active-filters ul li {
+			height: 20px;
+		}		
+
+		main .left .active-filters ul a,
+		main .left .active-filters a  {
+			font-size: 13px;
+			line-height: 20px;
+		}
+
+		main .left .filter-box ul li {
+			height: 20px;
+			box-shadow: 0 0 1px 0 #f00;
+		}
+
+		main .left .filter-box ul li label {
+			line-height: 20px;
+		}
+
+		main .left .filter-box ul li input {
+			margin-right: 10px;
 		}
 
 		main .right .product-grid {

@@ -4,8 +4,10 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<title>Sana shop</title>
-	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Oxygen:300,400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Pathway+Gothic+One" rel="stylesheet">
+	<!-- <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"> -->
+	<!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> -->
 
 	<link rel="stylesheet" href="styles/additional.css">
 	<!-- Normalize CSS -->
@@ -56,9 +58,11 @@
 			<div class="nav-opener"></div>
 			<a class="page-logo" href="#"><img src="images/sana-logo.png" alt="page-logo" width="157" height="42"></a>
 			<div class="search-box">
-				<div class="input-wrapper">
-					<input type="search" placeholder="Search..."><button>Go!</button>
-				</div>
+				<form action="search" action="get">
+					<div class="input-wrapper">
+						<input type="search" placeholder="Product name or item number..."><button>Go!</button>
+					</div>
+				</form>
 			</div>
 			<div class="shopping-cart"></div>
 		</div>
@@ -98,8 +102,6 @@
 	<main>
 		<!-- LEFT -->
 			<aside class="left">
-				<div class="left-opener"><span>Filter</span></div>
-				
 				<div class="active-filters">
 					<h3>Chosen Filters</h3>
 					<ul>
@@ -122,7 +124,7 @@
 						<li><a href="#">Vakantiefietsen</a></li>
 						<li><a href="#">Bakfietsen</a></li> -->
 						
-						<li><label><input type="checkbox" >Stadsfietsen</label></li>
+						<li><label><input type="checkbox">Stadsfietsen</label></li>
 						<li><label><input type="checkbox">Elektrische fietsen</label></li>
 						<li><label><input type="checkbox">Hybride fietsen</label></li>
 						<li><label><input type="checkbox">Transportfietsen</label></li>

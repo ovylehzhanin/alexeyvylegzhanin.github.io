@@ -5,21 +5,46 @@
 	.header-bottom,
 	.center,
 	main {
-		width: 77%;
+		width: 62.5%;
 		margin: 0 auto;
 	}
 
-	.header-top .contact-info {
-		display: block;
+	.header-top {
+		font-size: 11px;
+		padding-top: 8px;
+		margin-bottom: 35px;
 	}
 
-	.header-top .action {
-		position: static;
-	}
-
-		.header-top .action .hyp {
+		.header-top .contact-info {
 			display: block;
+			height: 18px;
+			line-height: 18px;
+			position: relative;
+			padding-left: 30px;
 		}
+
+			.header-top .contact-info::before {
+				position: absolute;
+				content: "";
+				width: 18px;
+				height: 18px;
+				top: 0;
+				left: 0;
+				background-color: #000;
+			}
+
+		.header-top .action {
+			position: static;
+		}
+
+			.header-top .action .hyp {
+				display: block;
+			}
+
+	.header-middle {
+		height: 42px;
+		margin-bottom: 18px;
+	}
 
 	.header-middle .nav-opener {
 		display: none;
@@ -34,15 +59,37 @@
 		width: 50%;
 	}
 
-	.header-bottom .main-menu {
-		position: static;
+	.header-middle .shopping-cart {
+		width: 42px;
+		height: 42px;
 	}
 
-		.header-bottom .main-menu {
-			width: 100%;
-			display: flex;
-			flex-direction: row;
+	.header-bottom {
+		margin-bottom: 8px;
+	}
+
+	.header-bottom .main-menu {
+		position: static;
+		width: 100%;
+		min-height: 62px;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+	}
+
+		.header-bottom .main-menu li a {
+			font-size: 20px;
+			padding: 0 16px;
+			text-decoration: none;
 		}
+
+			.header-bottom .main-menu li a:hover {
+				text-decoration: underline;
+			}
+
+	.above {
+		min-height: 190px;
+	}
 
 	.above .heading p {
 		display: block;
