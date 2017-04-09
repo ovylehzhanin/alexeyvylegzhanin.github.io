@@ -4,8 +4,10 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<title>Sana shop</title>
-	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Oxygen:300,400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Pathway+Gothic+One" rel="stylesheet">
+	<!-- <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"> -->
+	<!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> -->
 
 	<link rel="stylesheet" href="styles/additional.css">
 	<!-- Normalize CSS -->
@@ -56,9 +58,11 @@
 			<div class="nav-opener"></div>
 			<a class="page-logo" href="#"><img src="images/sana-logo.png" alt="page-logo" width="157" height="42"></a>
 			<div class="search-box">
-				<div class="input-wrapper">
-					<input type="search" placeholder="Search..."><button>Go!</button>
-				</div>
+				<form action="search" action="get">
+					<div class="input-wrapper">
+						<input type="search" placeholder="Product name or item number..."><button>Go!</button>
+					</div>
+				</form>
 			</div>
 			<div class="shopping-cart"></div>
 		</div>
@@ -89,7 +93,8 @@
 			</div>
 			<div class="heading">
 				<h1>bicycles new</h1>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque convallis bibendum odio at mollis. Donec in sodales libero. Sed molestie odio ut neque sollicitudin lobortis. Aenean at placerat libero. Fusce scelerisque tortor a ante pellentesque, et facilisis orci suscipit. Etiam semper mauris non erat porttitor, quis malesuada quam faucibus. Fusce placerat lorem vitae justo convallis, sit amet </p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque convallis bibendum odio at mollis. Donec in sodales libero. Sed molestie odio ut neque sollicitudin lobo... <a href="#">Read more</a></p>
+				<!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque convallis bibendum odio at mollis. Donec in sodales libero. Sed molestie odio ut neque sollicitudin lobortis. Aenean at placerat libero. Fusce scelerisque tortor a ante pellentesque, et facilisis orci suscipit. Etiam semper mauris non erat porttitor, quis malesuada quam faucibus. Fusce placerat lorem vitae justo convallis, sit amet </p> -->
 			</div>
 		</div>
 	</section>
@@ -98,13 +103,12 @@
 	<main>
 		<!-- LEFT -->
 			<aside class="left">
-				<div class="left-opener"><span>Filter</span></div>
-				
+				<div class="filter-opener"><span>filters</span></div>
 				<div class="active-filters">
 					<h3>Chosen Filters</h3>
 					<ul>
-						<li><a href="#">Blauw</a></li>
-						<li><a href="#">Batavus</a></li>
+						<li><a href="#">X</a>Blauw</li>
+						<li><a href="#">X</a>Batavus</li>
 					</ul>
 					<div class="hyp"><a href="#">Remove all filters</a></div>
 				</div>
@@ -122,7 +126,7 @@
 						<li><a href="#">Vakantiefietsen</a></li>
 						<li><a href="#">Bakfietsen</a></li> -->
 						
-						<li><label><input type="checkbox" >Stadsfietsen</label></li>
+						<li><label><input type="checkbox">Stadsfietsen</label></li>
 						<li><label><input type="checkbox">Elektrische fietsen</label></li>
 						<li><label><input type="checkbox">Hybride fietsen</label></li>
 						<li><label><input type="checkbox">Transportfietsen</label></li>
@@ -212,7 +216,7 @@
 			<!-- RIGHT -->
 			<section class="right">
 				<section class="view-settings">
-					<h2>Settings</h2>
+					<span>View:</span><a class="mode list-mode" href="#"></a><a class="mode grid-mode" href="#"></a>
 				</section>
 
 				<section class="product-grid">
@@ -221,6 +225,7 @@
 						<img src="images/product-image.jpg" alt="product-image" width="214" height="211">
 						<h3 class="product-title">Mongoose Agatz Elite Black</h3>
 						<p class="product-attributes">Rim | Mongoose | 28"</p>
+						<p class="product-stock">50 in stock</p>
 						<p class="product-price">€ 686,25</p>
 						<button class="add-to-basket">Add to basket</button>
 					</div>
@@ -229,6 +234,7 @@
 						<img src="images/product-image.jpg" alt="product-image" width="214" height="211">
 						<h3 class="product-title">Mongoose Agatz Elite Black</h3>
 						<p class="product-attributes">Rim | Mongoose | 28"</p>
+						<p class="product-stock">50 in stock</p>
 						<p class="product-price">€ 686,25</p>
 						<button class="add-to-basket">Add to basket</button>
 					</div>
@@ -237,6 +243,7 @@
 						<img src="images/product-image.jpg" alt="product-image" width="214" height="211">
 						<h3 class="product-title">Mongoose Agatz Elite Black</h3>
 						<p class="product-attributes">Rim | Mongoose | 28"</p>
+						<p class="product-stock">50 in stock</p>
 						<p class="product-price">€ 686,25</p>
 						<button class="add-to-basket">Add to basket</button>
 					</div>
@@ -245,6 +252,7 @@
 						<img src="images/product-image.jpg" alt="product-image" width="214" height="211">
 						<h3 class="product-title">Mongoose Agatz Elite Black</h3>
 						<p class="product-attributes">Rim | Mongoose | 28"</p>
+						<p class="product-stock">50 in stock</p>
 						<p class="product-price">€ 686,25</p>
 						<button class="add-to-basket">Add to basket</button>
 					</div>
@@ -253,6 +261,7 @@
 						<img src="images/product-image.jpg" alt="product-image" width="214" height="211">
 						<h3 class="product-title">Mongoose Agatz Elite Black</h3>
 						<p class="product-attributes">Rim | Mongoose | 28"</p>
+						<p class="product-stock">50 in stock</p>
 						<p class="product-price">€ 686,25</p>
 						<button class="add-to-basket">Add to basket</button>
 					</div>
@@ -261,6 +270,7 @@
 						<img src="images/product-image.jpg" alt="product-image" width="214" height="211">
 						<h3 class="product-title">Mongoose Agatz Elite Black</h3>
 						<p class="product-attributes">Rim | Mongoose | 28"</p>
+						<p class="product-stock">50 in stock</p>
 						<p class="product-price">€ 686,25</p>
 						<button class="add-to-basket">Add to basket</button>
 					</div>
@@ -269,6 +279,7 @@
 						<img src="images/product-image.jpg" alt="product-image" width="214" height="211">
 						<h3 class="product-title">Mongoose Agatz Elite Black</h3>
 						<p class="product-attributes">Rim | Mongoose | 28"</p>
+						<p class="product-stock">50 in stock</p>
 						<p class="product-price">€ 686,25</p>
 						<button class="add-to-basket">Add to basket</button>
 					</div>
@@ -277,6 +288,7 @@
 						<img src="images/product-image.jpg" alt="product-image" width="214" height="211">
 						<h3 class="product-title">Mongoose Agatz Elite Black</h3>
 						<p class="product-attributes">Rim | Mongoose | 28"</p>
+						<p class="product-stock">50 in stock</p>
 						<p class="product-price">€ 686,25</p>
 						<button class="add-to-basket">Add to basket</button>
 					</div>
@@ -285,6 +297,7 @@
 						<img src="images/product-image.jpg" alt="product-image" width="214" height="211">
 						<h3 class="product-title">Mongoose Agatz Elite Black</h3>
 						<p class="product-attributes">Rim | Mongoose | 28"</p>
+						<p class="product-stock">50 in stock</p>
 						<p class="product-price">€ 686,25</p>
 						<button class="add-to-basket">Add to basket</button>
 					</div>
@@ -355,23 +368,28 @@
 				<div class="social">
 					<h3>Social media</h3>
 					<ul>
-						<li><a href="#">Twitter</a></li>
-						<li><a href="#">Pinterest</a></li>
-						<li><a href="#">Facebook</a></li>
-						<li><a href="#">Google plus</a></li>
-						<li><a href="#">Linkedin</a></li>
+						<!-- Twitter -->
+						<li><a href="#" class="twitter" title="Twitter"></a></li>
+						<!-- Pinterest -->
+						<li><a href="#" class="pinterest" title="Pinterest"></a></li>
+						<!-- Facebook -->
+						<li><a href="#" class="facebook" title="Facebook"></a></li>
+						<!-- Google plus -->
+						<li><a href="#" class="google-plus" title="Google Plus"></a></li>
+						<!-- Linkedin -->
+						<li><a href="#" class="linkedin" title="Linkedin"></a></li>
 					</ul>
 				</div>
 				<div class="subscribe">
 					<h3>Subscribe to our newsletter</h3>
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliqua lorem enim, fermentum semper viverra t amet.</p>
 					<form action="" class="subscribe-form">
-						<div class="form-group"><input type="text"><input type="submit"></div>
+						<div class="form-group"><input placeholder="hello" type="text"><input type="submit" value="Subscribe"></div>
 					</form>
 				</div>
 			</div>
 			<div class="footer-bottom">
-				<div class="copyrights"><p>© Copyright 2017 Sana Commerce. All rights reserved.</p></div>
+				<div class="copyrights">© Copyright 2017 Sana Commerce. All rights reserved.</div>
 				<div class="footer-links">
 					<ul>
 						<li><a href="#">About us</a></li>
