@@ -1,7 +1,7 @@
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 640px) {
 	
 	body {
-		min-width: 738px;
+		min-width: 700px;
 	}
 
 	.header-top {
@@ -16,6 +16,28 @@
 			right: 70px;
 		}
 
+		.header-top .action .hover-opener {
+			position: relative;
+		}
+
+		.header-top .action .sub-action {
+			display: none;
+			position: absolute;
+		}
+
+		.header-top .action .language .sub-action { width: 127px; }
+
+		.header-top .action .my-account .sub-action { width: 147px; }
+
+		
+
+		.header-top .action .hover-opener:hover .sub-action { display: block; }
+
+		.header-top .action .sub-action.left { left: 0px; }
+
+		.header-top .action .sub-action.right { right: 0px; }
+
+		
 		.header-top .action .language span,
 		.header-top .action .my-account span {
 			display: none;
@@ -49,17 +71,48 @@
 			position: absolute;
 			top: 0;
 			left: 0;
-			width: 20%;
+			width: 30%;
 			z-index: 2;
 			background-color: #fff;
+			box-shadow: 0 0 1px 0 #000;
+		}
+
+		.header-bottom .main-menu>li {
+			padding-left: 15px;
+		}
+
+		.header-bottom .main-menu .extended:hover {
+			box-shadow: 0 0 1px 0 #000;
+		}
+
+		.header-bottom .main-menu .extended:hover  .sub-category {
+			display: flex;
+		}
+
+		.header-bottom .main-menu .sub-category {
+			display: none;
+			padding: 10px 15px;
+			box-sizing: border-box;
+			justify-content: space-between;
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 100%;
+			width: 230%;
+			background: #fff;
+			box-shadow: 0 0 1px 0 #000;
 		}
 
 .above {
 	display: block;
-	padding: 20px 15px 30px;
-	box-sizing: border-box;
 	min-height: 190px;
 }
+
+	.above .center {
+		box-sizing: border-box;
+		padding: 20px 15px 30px;
+	}
 
 	.above .breadcrumb {
 		margin-bottom: 60px;
@@ -126,7 +179,6 @@
 
 			main .features ul li {
 				box-sizing: border-box;
-				width: 50%;
 			}
 
 		main .right .recent-products {
@@ -166,7 +218,7 @@
 
 	footer .footer-bottom {
 		align-items: flex-start;
-		padding: 10px;
+		
 	}
 
 		footer .footer-bottom .footer-links ul {

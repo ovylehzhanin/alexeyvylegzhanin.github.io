@@ -3,6 +3,10 @@
 	box-shadow: 0 0 1px 0 #000;
 }
 
+.header-top .action {
+	background: #ccc;
+}
+
 main .right .view-settings .mode {
 	background: #ccc;
 }
@@ -11,6 +15,10 @@ main .right .view-settings .mode {
 	background-color: #ccc;
 }
 
-main .right .product-grid .product {
+main .right .product-grid .product:hover {
 	box-shadow: 0 0 1px 0 #000;	
+}
+
+main .left .filter-opener {
+	background-color: #ccc;
 }

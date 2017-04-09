@@ -26,12 +26,6 @@ footer ul {
 	padding: 0;
 }
 
-body {
-	font-family: 'Oxygen', sans-serif;
-	font-size: 12px;
-	font-weight: 400;
-}
-
 header ul,
 aside ul,
 .recently-viewed ul,
@@ -40,6 +34,12 @@ footer ul {
 	list-style: none;
 	margin: 0;
 	padding: 0;
+}
+
+body {
+	font-family: 'Oxygen', sans-serif;
+	font-size: 12px;
+	font-weight: 400;
 }
 
 header {
@@ -62,22 +62,37 @@ header {
 		flex-direction: column;
 	}
 
-		.header-top .action li { 
-			height: 40px;
-			padding-left: 15px;
+		.header-top .action>li { 
+			min-height: 40px;
 			line-height: 40px;
 			font-size: 13px;
+			vertical-align: center;
+		}
+		
+		.header-top .action .language-icon {
+			padding: 0 15px;
 		}
 
-		.header-top .action .language::before,
-		.header-top .action .my-account::before {
-			content: "";
+		.header-top .my-account {
+			position: relative;
+		}
+
+		.header-top .my-account i {
 			display: inline-block;
-			margin-right: .5em;
+			margin-left: 15px;
+			margin-right: 13px;
 			margin-bottom: -4px;
-			width: 17px;
-			height: 17px;
+			width: 18px;
+			height: 18px;
 			background: #000;
+		}
+
+		.header-top .action li .sub-action {
+			background-color: #fff;
+		}
+
+		.header-top .my-account ul li {
+			padding-left: 15px;
 		}
 
 		.header-top .action .hyp { display: none; }
@@ -140,18 +155,41 @@ header {
 
 .header-bottom {
 	order: 3;
+	padding: 0 15px;
 }
 
-	.header-bottom .main-menu li {
-		height: 40px;
-		padding-left: 15px;
+	.header-bottom .main-menu>li {
+		min-height: 40px;
 	}
 
-	.header-bottom .main-menu li a {
+	.header-bottom .main-menu>li>a {
 		font-family: 'Pathway Gothic One', sans-serif;
 		font-size: 20px;
 		line-height: 40px;
 		text-decoration: none;
+		text-transform: uppercase;
+	}
+
+	.header-bottom .main-menu .sub-category {
+		padding: 10px;
+	}
+
+	.header-bottom .main-menu .sub-category ul {
+		margin-bottom: 10px;
+	}
+
+	.header-bottom .main-menu .sub-category li::before {
+		content: "› ";
+	}
+
+	.header-bottom .main-menu .sub-category li a {
+		font-size: 13px;
+		line-height: 30px
+	}
+
+	.header-bottom .main-menu .sub-category span {
+		font-family: 'Pathway Gothic One', sans-serif;
+		font-size: 18px;
 		text-transform: uppercase;
 	}
 
@@ -163,6 +201,10 @@ main {
 	display: flex;
 	flex-direction: column;
 }
+		main .left {
+			box-sizing: border-box;
+			padding: 0 15px;
+		}
 
 		main .left .filter-opener {
 			height: 57px;
@@ -193,7 +235,6 @@ main {
 
 		main .left .active-filters,
 		main .left .filter-box {
-			padding-left: 15px;
 			margin-bottom: 37px;
 		}
 
@@ -243,7 +284,8 @@ main {
 		}
 
 		main .right {
-			padding-top: 12px;
+			padding: 12px 15px 0px;
+			box-sizing: border-box;
 		}
 
 		main .right .view-settings,
@@ -253,7 +295,6 @@ main {
 		}
 
 		main .right .view-settings {
-			padding-left: 15px;
 			height: 35px;
 			margin-bottom: 11px;
 		}
@@ -272,7 +313,6 @@ main {
 		}
 
 		main .right .product-grid {
-			padding: 0 15px;
 			flex-direction: column;
 		}
 
@@ -293,6 +333,7 @@ main {
 		main .right .product-grid .product h3 {
 			margin-top: 18px;
 			font-size: 12px;
+			font-weight: normal;
 		}
 
 		main .right .product-grid .product h3,
@@ -317,11 +358,15 @@ main {
 			text-transform: uppercase;	
 		}
 
+	main .features {
+		padding: 30px 15px;
+		background: #ccc;
+		box-sizing: border-box;
+	}
+
 	main .features ul {
 		display: flex;
 		flex-direction: column;
-		padding: 29px 15px;
-		background: #ccc;
 	}
 
 		main .features ul li {
@@ -352,10 +397,6 @@ main {
 			margin-bottom: 28px;
 		}
 
-	main .right .recently-viewed {
-		padding: 0 15px;
-	}
-
 	main .right .recently-viewed h2 {
 		font-family: 'Pathway Gothic One', sans-serif;
 		font-size: 26px;
@@ -378,6 +419,8 @@ main {
 	}
 
 	main .right .recently-viewed h3 {
+		font-size: 12px;
+		font-weight: normal;
 		margin: 0;
 		padding: 0;
 	}
@@ -447,7 +490,7 @@ footer .footer-bottom {
 		}
 
 		footer .footer-bottom {
-			padding: 10px;	
+			padding: 10px;
 		}
 
 		footer .footer-bottom .copyrights {

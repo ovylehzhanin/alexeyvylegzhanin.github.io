@@ -1,20 +1,21 @@
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 900px) {
 	
 	.header-top,
 	.header-middle,
 	.header-bottom,
 	.center,
 	main {
-		width: 62.5%;
+		width: 1000px;
 		margin: 0 auto;
 	}
 
 	.header-top {
 		flex-direction: row;
 		justify-content: space-between;
+		box-sizing: border-box;
 		font-size: 11px;
 		line-height: 1;
-		padding-top: 10px;
+		padding: 10px 10px 0px;
 		margin-bottom: 35px;
 	}
 
@@ -54,6 +55,8 @@
 			}
 
 	.header-middle {
+		box-sizing: border-box;
+		padding: 0 10px;
 		height: 42px;
 		margin-bottom: 18px;
 	}
@@ -86,12 +89,17 @@
 		min-height: 62px;
 		display: flex;
 		flex-direction: row;
+		flex-wrap: wrap;
 		align-items: center;
+		justify-content: flex-start;
+	}
+
+	.header-bottom .main-menu li {
+		padding: 0 15px;
 	}
 
 		.header-bottom .main-menu li a {
 			font-size: 20px;
-			padding: 0 16px;
 			text-decoration: none;
 		}
 
@@ -99,17 +107,31 @@
 				text-decoration: underline;
 			}
 
+.above .center {
+	padding: 20px 10px 30px;
+}
+
 .above .heading p {
 	display: block;
 }
 
-	main .right .product-grid .product {
-		width: 243px;
+
+
+	main .left {
+		padding: 0 10px;
 	}
 
-		main .features ul li {
-			width: 25%;
-		}
+	main .right {
+		padding: 12px 10px 0px;
+	}
+
+	main .right .product-grid .product {
+		width: 234px;
+	}
+
+	main .features {
+		padding: 30px 10px;
+	}
 
 	main .right .recent-products li:last-child {
 		display: block;
@@ -117,6 +139,11 @@
 	
 	main .right .recent-products li {
 		width: 33.33%;
+	}
+
+	footer .footer-top,
+	footer .footer-bottom {
+		padding: 0 10px;
 	}
 
 	.footer-top .sitemap,

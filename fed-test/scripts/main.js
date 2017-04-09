@@ -15,7 +15,25 @@ $(document).ready(function() {
 	// $('.expander').click(function() {
 	// 	$(this).nextAll().slideToggle('fast');
 	// });
+	
+	(function() {
+		var opener = $('.action-opener'),
+			subAction = $('.sub-action');
 
+		if ( opener.hasClass('collapsed') ) { 
+			opener.find(subAction).slideUp(0);
+		}
+
+		opener.click(function() {
+			$(this).find(subAction).slideToggle('fast');
+		});	
+	})();
+
+	$('.nav-opener').click(function() {
+
+		$('.main-menu').toggle();
+
+	});
 	
 
 });
