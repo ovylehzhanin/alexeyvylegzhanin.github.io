@@ -1,0 +1,464 @@
+/*'Montserrat', */
+
+/*
+	(?) Better use 12 grid system
+	8.33
+	16.66
+	25
+	33.33
+	41.66
+	50
+	58.33
+	66.66
+	75
+	83.33
+	91.66
+	100
+*/
+
+/* Main */
+html, 
+body,
+header ul,
+aside ul,
+footer ul {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Oxygen', sans-serif;
+	font-size: 12px;
+	font-weight: 400;
+}
+
+header ul,
+aside ul,
+.recently-viewed ul,
+.features ul, 
+footer ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	display: flex;
+	flex-direction: column;
+}
+
+.header-top {
+	display: inherit;
+	flex-direction: column;
+	order: 2;
+}
+
+	.header-top .contact-info {
+		display: none;
+	}
+
+	.header-top .action {
+		display: inherit;
+		flex-direction: column;
+	}
+
+		.header-top .action li { 
+			height: 40px;
+			padding-left: 15px;
+			line-height: 40px;
+			font-size: 13px;
+		}
+
+		.header-top .action .language::before,
+		.header-top .action .my-account::before {
+			content: "";
+			display: inline-block;
+			margin-right: .5em;
+			margin-bottom: -4px;
+			width: 17px;
+			height: 17px;
+			background: #000;
+		}
+
+		.header-top .action .hyp { display: none; }
+
+.header-middle {
+	display: inherit;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	order: 1;
+}
+
+	.header-middle .nav-opener {
+		order: 1;
+		width: 62px;
+		height: 62px;
+		background: #ccc;
+	}
+	
+	.header-middle .page-logo {
+		order: 2;
+	}
+
+	.header-middle .search-box {
+		order: 4;
+		width: 100%;
+		padding: 20px 15px;
+	}
+
+		.header-middle .input-wrapper {
+			height: 40px;
+			position: relative;
+		}
+
+		.header-middle input {
+			width: 100%;
+			height: 100%;
+			padding: 0 16px;
+			outline: none;
+			box-sizing: border-box;
+			font-family: inherit;
+			font-style: italic;
+			font-size: 13px;
+		}
+
+		.header-middle button {
+			position: absolute;
+			width: 55px;
+			top: 0;
+			right: 0;
+			bottom: 0;
+		}
+
+	.header-middle .shopping-cart {
+		order: 3;
+		width: 62px;
+		height: 62px;
+		background: #ccc;
+	}
+
+.header-bottom {
+	order: 3;
+}
+
+	.header-bottom .main-menu li {
+		height: 40px;
+		padding-left: 15px;
+	}
+
+	.header-bottom .main-menu li a {
+		font-family: 'Pathway Gothic One', sans-serif;
+		font-size: 20px;
+		line-height: 40px;
+		text-decoration: none;
+		text-transform: uppercase;
+	}
+
+.above {
+	display: none;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+}
+
+		main .left .filter-opener {
+			height: 57px;
+			text-align: center;
+		}
+
+			main .left .filter-opener span {
+				position: relative;
+				font-family: 'Pathway Gothic One', sans-serif;
+				font-size: 22px;
+				line-height: 57px;
+				padding-right: 23px;
+				color: blue;
+				user-select: none;
+				text-transform: uppercase;
+			}
+
+			main .left .filter-opener span::after {
+				content: "";
+				display: block;
+				position: absolute;
+				top: 10px;
+				right: 0;
+				width: 11px;
+				height: 7px;
+				background: #000;
+			}
+
+		main .left .active-filters,
+		main .left .filter-box {
+			padding-left: 15px;
+			margin-bottom: 37px;
+		}
+
+		main .left .filter-box:last-child {
+			margin-bottom: 5px;
+		}
+
+		main .left .active-filters h3,
+		main .left .filter-box h3 {
+			height: 25px;
+			margin: 0;
+			padding: 0;
+			font-family: 'Pathway Gothic One', sans-serif;
+			font-size: 20px;
+			line-height: 25px;
+			text-transform: uppercase;
+			font-weight: normal;
+		}
+
+		main .left .active-filters ul li,
+		main .left .filter-box ul li {
+			height: 24px;
+		}		
+
+		main .left .active-filters ul a,
+		main .left .active-filters a  {
+			font-size: 13px;
+			line-height: 24px;
+		}
+
+		main .left .active-filters ul a {
+			padding-right: 21px;
+		}
+
+		main .left .hyp {
+			font-weight: bold;
+		}
+
+		main .left .filter-box ul li label {
+			font-size: 13px;
+			line-height: 24px;
+			user-select: none;
+		}
+
+		main .left .filter-box ul li input {
+			margin-right: 10px;
+		}
+
+		main .right {
+			padding-top: 12px;
+		}
+
+		main .right .view-settings,
+		main .right .product-grid {
+			display: flex;
+			align-items: center;
+		}
+
+		main .right .view-settings {
+			padding-left: 15px;
+			height: 35px;
+			margin-bottom: 11px;
+		}
+
+		main .right .view-settings span {
+			font-size: 13px;
+		}
+
+		main .right .view-settings * {
+			margin-right: 10px;
+		}
+
+		main .right .view-settings .mode {
+			width: 24px;
+			height: 24px;
+		}
+
+		main .right .product-grid {
+			padding: 0 15px;
+			flex-direction: column;
+		}
+
+		main .right .product-grid .product {
+			box-sizing: border-box;
+			width: 100%;
+			min-height: 370px;
+			padding: 14px 0;
+			margin-bottom: 13px;
+		}
+
+		main .right .product-grid .product img,
+		main .right .product-grid .product button { 
+			display: block;
+			margin: 0 auto;
+		}
+
+		main .right .product-grid .product h3 {
+			margin-top: 18px;
+			font-size: 12px;
+		}
+
+		main .right .product-grid .product h3,
+		main .right .product-grid .product p {
+			text-align: center;
+		}
+
+		main .right .product-grid .product .product-stock {
+			display: none;
+		}
+
+		main .right .product-grid .product .product-price {
+			font-size: 20px;
+			font-weight: bold;
+		}
+
+		main .right .product-grid .product button { 
+			width: 125px; 
+			height: 30px;
+			font-family: 'Pathway Gothic One', sans-serif;
+			font-size: 18px;
+			text-transform: uppercase;	
+		}
+
+	main .features ul {
+		display: flex;
+		flex-direction: column;
+		padding: 29px 15px;
+		background: #ccc;
+	}
+
+		main .features ul li {
+			position: relative;
+			margin: 0 auto;
+			box-sizing: border-box;
+			padding-left: 34px;
+			height: 18px;
+			width: 100%;
+			font-family: 'Pathway Gothic One', sans-serif;
+			font-size: 19px;
+			line-height: 18px;
+			text-transform: uppercase;
+		}
+
+		main .features ul li:before {
+			display: block;
+			position: absolute;
+			top: -1px;
+			left: -1px;
+			content: "";
+			width: 20px;
+			height: 20px;
+			background-color: #ddd;
+		}
+
+		main .features ul li:not(:last-child) {
+			margin-bottom: 28px;
+		}
+
+	main .right .recently-viewed {
+		padding: 0 15px;
+	}
+
+	main .right .recently-viewed h2 {
+		font-family: 'Pathway Gothic One', sans-serif;
+		font-size: 26px;
+		line-height: 24px;
+		text-transform: uppercase;
+	}
+
+	main .right .recently-viewed a {
+		display: none;
+	}
+
+	main .right .recent-products {
+		display: flex;
+		flex-direction: column;
+	}
+
+	main .right .recent-products img {
+		float: left;
+		margin-right: 20px;
+	}
+
+	main .right .recently-viewed h3 {
+		margin: 0;
+		padding: 0;
+	}
+
+footer h3 {
+	font-family: 'Pathway Gothic One', sans-serif;
+	font-size: 18px;
+	font-weight: normal;
+	text-transform: uppercase;
+}
+
+footer .footer-top,
+footer .footer-bottom {
+	padding: 0 15px;
+	display: flex;
+	flex-direction: column;
+}
+
+	footer .footer-top ul,
+	footer .footer-bottom ul {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
+		footer .footer-top .sitemap ul li,
+		footer .footer-bottom .footer-links ul li {
+			margin-bottom: 15px;
+		}
+
+		footer .footer-top .sitemap ul li {
+			width: 50%;	
+		}
+
+		footer .footer-top .social ul li a {
+			display: block;
+			width: 25px;
+			height: 25px;
+			margin-right: 6px;
+			margin-bottom: 6px;
+			border-radius: 3px;
+			background: #ccc;
+		}
+
+		footer .footer-top .subscribe .form-group {
+			width: 100%;
+			height: 36px;
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+		}
+
+		footer .footer-top .subscribe p {
+			display: none;
+		}
+
+		footer .footer-top .subscribe .form-group input {
+			height: auto;
+		}
+
+		footer .footer-top .subscribe .form-group input[type="text"] {
+			width: 60%;
+		}
+
+		footer .footer-top .subscribe .form-group input[type="submit"] {
+			width: 37.93103448275862%;
+		}
+
+		footer .footer-bottom {
+			padding: 10px;	
+		}
+
+		footer .footer-bottom .copyrights {
+			text-align: center;
+			margin-bottom: 15px;
+		}
+
+		footer .footer-bottom .footer-links ul {
+			justify-content: center;
+		}
+
+		footer .footer-bottom .footer-links ul li {
+			margin-right: 10px;
+		}
