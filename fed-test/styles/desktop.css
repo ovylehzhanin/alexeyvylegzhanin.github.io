@@ -2,7 +2,7 @@
 	
 	.header-top,
 	.header-middle,
-	.header-bottom,
+	.header-bottom .main-menu,
 	.center,
 	main {
 		width: 1000px;
@@ -40,6 +40,10 @@
 			position: static;
 		}
 
+			.header-top .action>li {
+				min-height: auto;
+			}
+
 			.header-top .action li {
 				padding: 0 1em;
 				height: auto;
@@ -53,6 +57,12 @@
 			.header-top .action .hyp {
 				display: block;
 			}
+
+			.header-top .action .sub-action {
+				display: none;
+			}
+
+			.header-top .action .hover-opener:hover .sub-action { display: none; }
 
 	.header-middle {
 		box-sizing: border-box;
@@ -79,24 +89,20 @@
 		height: 42px;
 	}
 
-	.header-bottom {
-		margin-bottom: 8px;
-	}
-
 	.header-bottom .main-menu {
 		position: static;
-		width: 100%;
 		min-height: 62px;
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
 		align-items: center;
 		justify-content: flex-start;
+		background-color: transparent;
 	}
 
-	.header-bottom .main-menu li {
-		padding: 0 15px;
-	}
+		.header-bottom .main-menu li {
+			padding: 0 15px;
+		}
 
 		.header-bottom .main-menu li a {
 			font-size: 20px;
@@ -106,6 +112,8 @@
 			.header-bottom .main-menu li a:hover {
 				text-decoration: underline;
 			}
+
+			.header-bottom .main-menu .extended:hover  .sub-category { display: none; }
 
 .above .center {
 	padding: 20px 10px 30px;
