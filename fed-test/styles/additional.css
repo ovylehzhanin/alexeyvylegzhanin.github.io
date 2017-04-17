@@ -1,18 +1,9 @@
-.above .heading h1,
-.above .heading p {
-	box-shadow: 0 0 1px 0 #000;
-}
-
-.header-top .action {
-	background: #ccc;
-}
-
-main .right .view-settings .mode {
-	background: #ccc;
-}
-
 .above {
 	background-color: #ccc;
+}
+
+.header-bottom {
+	background-color: #ddd;
 }
 
 main .right .product-grid .product:hover {

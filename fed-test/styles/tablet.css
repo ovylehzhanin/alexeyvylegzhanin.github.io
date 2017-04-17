@@ -1,7 +1,7 @@
 @media screen and (min-width: 640px) {
 	
 	body {
-		min-width: 700px;
+		min-width: 640px;
 	}
 
 	.header-top {
@@ -9,105 +9,114 @@
 		order: 1;
 	}
 
-		.header-top .action {
-			position: absolute;
-			flex-direction: row;
-			top: 1em;
-			right: 70px;
-		}
+	.header-top .action {
+		position: absolute;
+		flex-direction: row;
+		top: 1em;
+		right: 70px;
+	}
 
-		.header-top .action .hover-opener {
-			position: relative;
-		}
+	.header-top .action .hover-opener {
+		position: relative;
+	}
 
-		.header-top .action .sub-action {
-			display: none;
-			position: absolute;
-		}
+	.header-top .action .sub-action {
+		display: none;
+		position: absolute;
+		z-index: 3;
+	}
 
-		.header-top .action .language .sub-action { width: 127px; }
+	.header-top .action .sub-action li a {
+		font-size: 11px;
+		line-height: 30px;
+	}
 
-		.header-top .action .my-account .sub-action { width: 147px; }
+	.header-top .action .language .sub-action { width: 127px; }
 
-		
+	.header-top .action .my-account .sub-action { width: 147px; }
 
-		.header-top .action .hover-opener:hover .sub-action { display: block; }
+	
 
-		.header-top .action .sub-action.left { left: 0px; }
+	.header-top .action .hover-opener:hover .sub-action { display: block; }
 
-		.header-top .action .sub-action.right { right: 0px; }
+	.header-top .action .sub-action.left { left: 0px; }
 
-		
-		.header-top .action .language span,
-		.header-top .action .my-account span {
-			display: none;
-		}
+	.header-top .action .sub-action.right { right: 0px; }
+
+	
+	.header-top .action .language span,
+	.header-top .action .my-account span {
+		display: none;
+	}
 
 	.header-middle {
 		order: 2;
 	}
 
-		.header-middle .page-logo {
-			margin-left: -8em;
-		}
+	.header-middle .page-logo {
+		margin-left: -8em;
+	}
 
-		.header-middle .search-box { 
-			margin-left: -8em;
-			width: 30%;
-			order: 3;
-			padding: 0;
-		}
+	.header-middle .search-box { 
+		margin-left: -8em;
+		width: 30%;
+		order: 3;
+		padding: 0;
+	}
 
-		.header-middle .shopping-cart {
-			order: 4;
-		}
+	.header-middle .shopping-cart {
+		order: 4;
+	}
 
 	.header-bottom {
 		position: relative;
 	}
 
-		.header-bottom .main-menu {
-			display: none;
-			position: absolute;
-			top: 0;
-			left: 0;
-			width: 30%;
-			z-index: 2;
-			background-color: #fff;
-			box-shadow: 0 0 1px 0 #000;
-		}
+	.header-bottom .main-menu {
+		display: none;
+	}
 
-		.header-bottom .main-menu>li {
-			padding-left: 15px;
-		}
+	.header-bottom .main-menu.visible {
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 30%;
+		z-index: 2;
+		background-color: #fff;
+	}
 
-		.header-bottom .main-menu .extended:hover {
-			box-shadow: 0 0 1px 0 #000;
-		}
+	.header-bottom .main-menu>li {
+		padding-left: 15px;
+	}
 
-		.header-bottom .main-menu .extended:hover  .sub-category {
-			display: flex;
-		}
+	.header-bottom .main-menu .extended:hover {
+		box-shadow: 0 0 1px 0 #000;
+	}
 
-		.header-bottom .main-menu .sub-category {
-			display: none;
-			padding: 10px 15px;
-			box-sizing: border-box;
-			justify-content: space-between;
-			position: absolute;
-			top: 0;
-			right: 0;
-			bottom: 0;
-			left: 100%;
-			width: 230%;
-			background: #fff;
-			box-shadow: 0 0 1px 0 #000;
-		}
+	.header-bottom .main-menu .extended:hover  .sub-category {
+		display: flex;
+	}
 
-.above {
-	display: block;
-	min-height: 190px;
-}
+	.header-bottom .main-menu .sub-category {
+		display: none;
+		padding: 10px 15px;
+		box-sizing: border-box;
+		justify-content: space-between;
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 100%;
+		width: 230%;
+		background: #fff;
+		box-shadow: 0 0 1px 0 #000;
+	}
+
+	.above {
+		display: block;
+		min-height: 190px;
+	}
 
 	.above .center {
 		box-sizing: border-box;
@@ -145,54 +154,54 @@
 		padding-top: 12px;
 	}
 
-		main .left {
-			width: 25%;
-		}
+	main .left-column {
+		width: 25%;
+	}
 
-			main .left .filter-opener {
-				display: none;
-			}
+	main .left-column .filter-opener {
+		display: none;
+	}
 
-		main .right {
-			width: 75%;
-			padding-top: 0px;
-		}
+	main .right-column {
+		width: 75%;
+		padding-top: 0px;
+	}
 
-			main .right .product-grid {
-				flex-direction: row;
-				flex-wrap: wrap;
-				justify-content: space-between;
-			}
+	main .right-column .product-grid {
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
 
-				main .right .product-grid .product {
-					width: 49%;
-				}
+	main .right-column .product-grid .product {
+		width: 49%;
+	}
 
-		main .features {
-			width: 100%;
-		}
+	main .features {
+		width: 100%;
+	}
 
-		main .features ul {
-			flex-direction: row;
-			flex-wrap: wrap;
-		}
+	main .features ul {
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
 
-			main .features ul li {
-				box-sizing: border-box;
-			}
+	main .features ul li {
+		box-sizing: border-box;
+	}
 
-		main .right .recent-products {
-			flex-direction: row;
-			justify-content: space-between;
-		}
+	main .right-column .recent-products {
+		flex-direction: row;
+		justify-content: space-between;
+	}
 
-			main .right .recent-products li:last-child {
-				display: none;
-			}
-			
-			main .right .recent-products li {
-				width: 50%;
-			}
+	main .right-column .recent-products li:last-child {
+		display: none;
+	}
+	
+	main .right-column .recent-products li {
+		width: 50%;
+	}
 
 	footer .footer-top,
 	footer .footer-bottom {
@@ -200,31 +209,30 @@
 		justify-content: space-between;
 	}
 
-		footer .footer-top .sitemap {
-			width: 31.43631436314363%;
-		}
+	footer .footer-top .sitemap {
+		width: 31.43631436314363%;
+	}
 
-		footer .footer-top .social {
-			width: 23.57723577235772%;
-		}
+	footer .footer-top .social {
+		width: 23.57723577235772%;
+	}
 
-		footer .footer-top .subscribe {
-			width: 43.08943089430894%;
-		}
+	footer .footer-top .subscribe {
+		width: 43.08943089430894%;
+	}
 
-		footer .footer-top .subscribe p {
-			display: block;
-		}
+	footer .footer-top .subscribe p {
+		display: block;
+	}
 
 	footer .footer-bottom {
 		align-items: flex-start;
-		
 	}
 
-		footer .footer-bottom .footer-links ul {
-			display: flex;
-			flex-direction: row;
-			justify-content: space-between;
-		}
+	footer .footer-bottom .footer-links ul {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
 
 }

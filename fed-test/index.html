@@ -23,12 +23,13 @@
 <body>
 	<header>
 		
-		<div class="header-top">
-			
+		<div class="header-top mobile-item">
 			<section class="contact-info">If you have any questions, call us (<a href="tel:0102436000">010 2436000</a>) of visit our <a href="#">customer service page</a></section>
 			<ul class="action">
 				<li class="language action-opener hover-opener collapsed">
-					<img src="" alt="language-icon" class="language-icon" width="16" height="11"><span>Language: English</span>
+					<div class="list-expander">
+						<img src="" alt="language-icon" class="language-icon" width="16" height="11"><span>Language: English</span>
+					</div>
 					<ul class="sub-action left">
 						<li><a href="#"><img src="" alt="gb" class="language-icon" width="16" height="11">English</a></li>
 						<li><a href="#"><img src="" alt="nl" class="language-icon" width="16" height="11">Nederlands</a></li>
@@ -38,7 +39,10 @@
 				</li>
 				<li class="hyp"><a href="#">Customer service</a></li>
 				<li class="hyp"><a href="#">Login</a></li>
-				<li class="my-account action-opener hover-opener collapsed"><i class="icon"></i><span>Account</span>
+				<li class="my-account action-opener hover-opener collapsed">
+					<div class="list-expander">
+						<i class="icon"></i><span>Account</span>
+					</div>
 					<ul class="sub-action right">
 						<li><a href="#">Welcome Jouke de Vries</a></li>
 						<li><a href="#">Register</a></li>
@@ -56,9 +60,9 @@
 		</div>
 
 		<div class="header-middle">
-			<div class="nav-opener"></div>
+			<div class="menu-opener"></div>
 			<a class="page-logo" href="#"><img src="images/sana-logo.png" alt="page-logo" width="157" height="42"></a>
-			<div class="search-box">
+			<div class="search-box mobile-item">
 				<form action="search" action="get">
 					<div class="input-wrapper">
 						<input type="search" placeholder="Product name or item number..."><button>Go!</button>
@@ -68,12 +72,13 @@
 			<div class="shopping-cart"></div>
 		</div>
 
-		<div class="header-bottom">
+		<div class="header-bottom mobile-item">
 			<nav>
 				<ul class="main-menu">
 					<li><a href="#">new</a></li>
 					<li><a href="#">city bikes</a></li>
-					<li class="extended"><a href="#">touring bikes</a>
+					<li class="extended">
+						<a href="#" class="list-expander">touring bikes</a>
 						<div class="sub-category">
 							<ul><span><a href="#">Clothing</a></span>
 								<li><a href="#">Sweaters</a></li>
@@ -133,7 +138,8 @@
 	<!-- Main content -->
 	<main>
 		<!-- LEFT -->
-			<aside class="left">
+			<aside class="left-column">
+				<div class="filter-opener list-expander"><span>Filters</span></div>
 				<!-- <div class="filter-opener"><span>filters</span></div> -->
 				<div class="active-filters">
 					<h3>Chosen Filters</h3>
@@ -144,7 +150,7 @@
 					<div class="hyp"><a href="#">Remove all filters</a></div>
 				</div>
 				<div class="filter-box">
-					<h3 class="expander">Type Fiets</h3>
+					<h3 class="list-expander">Type Fiets</h3>
 					<ul>
 						<!-- <li><a href="#">Stadsfietsen</a></li>
 						<li><a href="#">Elektrische fietsen</a></li>
@@ -171,14 +177,14 @@
 					<div class="hyp"><a href="#">Meer...</a></div>
 				</div>
 				<div class="filter-box">
-					<h3 class="expander">Gender</h3>
+					<h3 class="list-expander">Gender</h3>
 					<select name="" id="">
 						<option value="">Male</option>
 						<option value="">Female</option>
 					</select>
 				</div>
 				<div class="filter-box">
-					<h3 class="expander">Brands</h3>
+					<h3 class="list-expander">Brands</h3>
 					<ul>
 						<!-- <li><a href="#">Gazelle</a></li>
 						<li><a href="#">Batavus</a></li>
@@ -203,7 +209,7 @@
 					<div class="hyp"><a href="#">Meer...</a></div>	
 				</div>
 				<div class="filter-box">
-					<h3 class="expander">Price range</h3>
+					<h3 class="list-expander">Price range</h3>
 					<div class="range-filter-group">
 						<div class="range-slider">
 							<input type="range" min="0" max="5000" step="1" value="100">
@@ -216,7 +222,7 @@
 					</div>
 				</div>
 				<div class="filter-box">
-					<h3 class="expander">Colors</h3>
+					<h3 class="list-expander">Colors</h3>
 					<ul>
 						<!-- <li><a href="#">Zwart</a></li>
 						<li><a href="#">Bruin</a></li>
@@ -245,7 +251,7 @@
 			</aside>
 
 			<!-- RIGHT -->
-			<section class="right">
+			<section class="right-column">
 				<section class="view-settings">
 					<span>View:</span><a class="mode list-mode" href="#"></a><a class="mode grid-mode" href="#"></a>
 				</section>
