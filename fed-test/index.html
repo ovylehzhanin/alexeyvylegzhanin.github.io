@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Sana shop</title>
+	<link rel="icon" href="images/favicon.ico">
+	<link href="https://fonts.googleapis.com/css?family=Oxygen:300,400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Pathway+Gothic+One" rel="stylesheet">
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"> -->
+	<!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> -->
+	
+			<!-- Additional __start__ -->
+			<link rel="stylesheet" href="styles/additional.css">
+			<!-- Additional __end__ -->
+
+	<!-- Normalize CSS -->
+	<link rel="stylesheet" href="styles/normalize.css">
+	<link rel="stylesheet" href="styles/basic.css">
+	<!-- Mobile -->
+	<link rel="stylesheet" href="styles/mobile.css">
+	<!-- Tablet -->
+	<link rel="stylesheet" href="styles/tablet.css">
+	<!-- Desktop -->
+	<link rel="stylesheet" href="styles/desktop.css">
+</head>
+<body>
+	<header class="header">
+		
+		<section class="header__top">
+			<section class="contact-info">If you have any questions, call us (<a href="tel:0102436000">010 2436000</a>) of visit our <a href="#">customer service page</a></section>
+			<section class="user-menu">
+				<!-- Dropdown menu -->
+				<div class="user-menu__dropdown language-switcher">
+					<div class="dropdown-menu__expander">
+						<img src="images/pic/1033.gif" alt="en" class="language-switcher__image"><span class="language-switcher__text">Language: English</span>
+					</div>
+					<ul class="dropdown-menu">
+						<li class="dropdown-menu__item">
+							<a href="#" class="language-switcher__link"><img src="images/pic/1033.gif" alt="en" class="language-switcher__image"><span class="language-switcher__text">English</span></a>
+						</li>
+						<li class="dropdown-menu__item">
+							<a href="#" class="language-switcher__link"><img src="images/pic/1043.gif" alt="nl" class="language-switcher__image"><span class="language-switcher__text">Nederlands</span></a>
+						</li>
+						<li class="dropdown-menu__item">
+							<a href="#" class="language-switcher__link"><img src="images/pic/1031.gif" alt="de" class="language-switcher__image"><span class="language-switcher__text">Deutsch</span></a>
+						</li>
+						<li class="dropdown-menu__item">
+							<a href="#" class="language-switcher__link"><img src="images/pic/1036.gif" alt="fr" class="language-switcher__image"><span class="language-switcher__text">Français</span></a>
+						</li>
+					</ul>
+				</div>
+				<!-- Link -->
+				<a href="#" class="user-menu__link">Customer service</a>
+				<!-- Link -->
+				<a href="#" class="user-menu__link">Login</a>
+				<!-- Dropdown menu -->
+				<div class="user-menu__dropdown my-account">
+					<div class="dropdown-menu__expander">
+						<i class="my-account__icon"></i>
+						<span class="my-account__text">Account</span>
+					</div>
+					<ul class="dropdown-menu">
+						<li class="dropdown-menu__item">
+							<span class="my-account__item">Welcome <strong>Jouke de Vries</strong></span>
+						</li>
+						<!-- <li class="dropdown-menu__item">
+							<a href="#" class="my-account__item link">Register</a>
+						</li> -->
+						<li class="dropdown-menu__item">
+							<a href="#" class="my-account__item link">My account</a>
+						</li>
+						<li class="dropdown-menu__item">
+							<a href="#" class="my-account__item link">My wishlist</a>
+						</li>
+						<li class="dropdown-menu__item">
+							<a href="#" class="my-account__item link">Customer service</a>
+						</li>
+						<li class="dropdown-menu__item">
+							<a href="#" class="my-account__item link">Customer service</a>
+						</li>
+						<li class="dropdown-menu__item">
+							<a href="#" class="my-account__item link">Quick order</a>
+						</li>
+						<li class="dropdown-menu__item">
+							<a href="#" class="my-account__item link">Represent customer</a>
+						</li>
+						<li class="dropdown-menu__item">
+							<a href="#" class="my-account__item link">Logout</a>
+						</li>
+					</ul>
+				</div>
+			</section>
+		</section>
+
+		<section class="header__middle">
+			<div class="menu-opener"></div>
+			
+			<a class="page-logo" href="#"><img src="images/pic/sana-logo.png" alt="page-logo-image" class="page-logo__image"></a>
+			
+			<form class="search-form">
+					<div class="search-form__elements-wrapper">
+						<input class="search-form__text-input" type="search" placeholder="Product name or item number...">
+						<button class="search-form__button"></button>
+					</div>
+			</form>
+			
+			<div class="shopping-cart"></div>
+		</section>
+
+
+		<div class="header__bottom">
+			
+			<nav class="menu__wrapper">
+				<ul class="menu">
+					<li class="menu__item"><a class="menu__link" href="#">new</a></li>
+					<li class="menu__item"><a class="menu__link" href="#">city bikes</a></li>
+					<li class="menu__item expander"><a class="menu__link" href="#">touring bikes</a>
+						<div class="sub-menu__wrapper">
+							<!-- Sub -->
+							<ul class="sub-menu">
+								<li class="sub-menu__item title">
+									<a class="sub-menu__link" href="#">Clothing</a>
+								</li>
+								<!-- Sub title -->
+								<li class="sub-menu__item">
+									<a class="sub-menu__link" href="#">Sweaters</a>
+								</li>
+								<!-- Sub items -->
+								<li class="sub-menu__item">
+									<a class="sub-menu__link" href="#">Pants</a>
+								</li>
+								<li class="sub-menu__item">
+									<a class="sub-menu__link" href="#">Jeans</a>
+								</li>
+								<li class="sub-menu__item">
+									<a class="sub-menu__link" href="#">Jackets & Coats</a>
+								</li>
+								<li class="sub-menu__item">
+									<a class="sub-menu__link" href="#">Cardigans</a>
+								</li>
+								<!-- View more link -->
+								<li class="sub-menu__item view-more">
+									<a class="sub-menu__link" href="#">View more...</a>
+								</li>
+							</ul>
+							<!-- Sub -->
+							<ul class="sub-menu">
+								<!-- Sub title -->
+								<li class="sub-menu__item title">
+									<a class="sub-menu__link" href="#">Basics</a>
+								</li>
+								<!-- Sub items -->
+								<li class="sub-menu__item">
+									<a class="sub-menu__link" href="#">Polo Shirts</a>
+								</li>
+								<li class="sub-menu__item">
+									<a class="sub-menu__link" href="#">Shirts</a>
+								</li>
+								<li class="sub-menu__item">
+									<a class="sub-menu__link" href="#">Shorts</a>
+								</li>
+								<li class="sub-menu__item">
+									<a class="sub-menu__link" href="#">Skirts</a>
+								</li>
+								<li class="sub-menu__item">
+									<a class="sub-menu__link" href="#">Tops</a>
+								</li>
+								<li class="sub-menu__item">
+									<a class="sub-menu__link" href="#">T-Shirts</a>
+								</li>
+								<!-- View more link -->
+								<li class="sub-menu__item view-more">
+									<a class="sub-menu__link" href="#">View more...</a>
+								</li>
+							</ul>
+							<ul class="sub-menu">
+								<!-- Sub title -->
+								<li class="sub-menu__item title">
+									<a class="sub-menu__link" href="#">Shoes</a>
+								</li>
+								<!-- Sub items -->
+								<li class="sub-menu__item">
+									<a class="sub-menu__link" href="#">Sneakers</a>
+								</li>
+								<li class="sub-menu__item">
+									<a class="sub-menu__link" href="#">Socks</a>
+								</li>
+								<li class="sub-menu__item">
+									<a class="sub-menu__link" href="#">Shoes</a>
+								</li>
+								<li class="sub-menu__item">
+									<a class="sub-menu__link" href="#">Flipflops & Sandals</a>
+								</li>
+								<li class="sub-menu__item">
+									<a class="sub-menu__link" href="#">Pumps</a>
+								</li>
+								<li class="sub-menu__item">
+									<a class="sub-menu__link" href="#">Boots</a>
+								</li>
+								<li class="sub-menu__item">
+									<a class="sub-menu__link" href="#">Ballerinas</a>
+								</li>
+								<!-- View more link -->
+								<li class="sub-menu__item view-more">
+									<a class="sub-menu__link" href="#">View more...</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li class="menu__item"><a class="menu__link" href="#">allround bikes</a></li>
+					<li class="menu__item"><a class="menu__link" href="#">sporting bikes</a></li>
+					<li class="menu__item"><a class="menu__link" href="#">brands</a></li>
+					<li class="menu__item"><a class="menu__link" href="#">about us</a></li>
+					<li class="menu__item"><a class="menu__link" href="#">contact</a></li>
+				</ul>
+			</nav>
+
+		</div>
+	</header>
+
+	<!-- ABOVE -->
+	<section class="above-content__wrapper">
+		<div class="above-content">
+			<div class="breadcrumb">
+				<a class="breadcrumb__link" href="#">home</a>
+				<a class="breadcrumb__link" href="#">new</a>
+			</div>
+			<div class="above-content__text-wrapper">
+				<h1 class="above-content__header">bicycles new</h1>
+				<p class="above-content__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque convallis bibendum odio at mollis. Donec in sodales libero. Sed molestie odio ut neque sollicitudin lobo... <a href="#">Read more</a></p>
+				<p class="above-content__paragraph-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque convallis bibendum odio at mollis. Donec in sodales libero. Sed molestie odio ut neque sollicitudin lobortis. Aenean at placerat libero. Fusce scelerisque tortor a ante pellentesque, et facilisis orci suscipit. Etiam semper mauris non erat porttitor, quis malesuada quam faucibus. Fusce placerat lorem vitae justo convallis, sit amet </p>
+			</div>
+		</div>
+	</section>
+
+	<!-- Filter opener -->
+	<section class="filters-opener"><span class="filters-opener__text">Filters</span></section>
+
+	<!-- Main content -->
+	<main class="main">
+		<!-- LEFT -->
+			<aside class="left-column">
+				
+				<section class="active-filters">
+					<h3 class="active-filters__title">Chosen Filters</h3>
+					<ul class="active-filters__list">
+						<li class="active-filters__item"><a class="active-filters__remove-link" href="#">X</a>Blauw</li>
+						<li class="active-filters__item"><a class="active-filters__remove-link" href="#">X</a>Batavus</li>
+					</ul>
+					<div class="link-action"><a href="#">Remove all filters</a></div>
+				</section>
+
+				<section class="filters-block">
+					<h3 class="filters-list__expander">Type Fiets</h3>
+					<ul class="filters-list">
+						<li class="filters-list__item"><label class="filters-list__label"><input class="filters-list__checkbox" type="checkbox">Stadsfietsen</label></li>
+						<li class="filters-list__item"><label class="filters-list__label"><input class="filters-list__checkbox" type="checkbox">Elektrische fietsen</label></li>
+						<li class="filters-list__item"><label class="filters-list__label"><input class="filters-list__checkbox" type="checkbox">Hybride fietsen</label></li>
+						<li class="filters-list__item"><label class="filters-list__label"><input class="filters-list__checkbox" type="checkbox">Transportfietsen</label></li>
+						<li class="filters-list__item"><label class="filters-list__label"><input class="filters-list__checkbox" type="checkbox">Opa / Omafietsen</label></li>
+						<li class="filters-list__item"><label class="filters-list__label"><input class="filters-list__checkbox" type="checkbox">Lifestyle fietsen</label></li>
+						<li class="filters-list__item"><label class="filters-list__label"><input class="filters-list__checkbox" type="checkbox">Moederfietsen</label></li>
+						<li class="filters-list__item"><label class="filters-list__label"><input class="filters-list__checkbox" type="checkbox">Kinderfietsen</label></li>
+						<li class="filters-list__item"><label class="filters-list__label"><input class="filters-list__checkbox" type="checkbox">Vakantiefietsen</label></li>
+						<li class="filters-list__item"><label class="filters-list__label"><input class="filters-list__checkbox" type="checkbox">Bakfietsen</label></li>
+					</ul>
+					<div class="link-action"><a href="#">Meer...</a></div>
+				</section>
+
+				<section class="filters-block">
+					<h3 class="filters-list__expander">Gender</h3>
+					<!-- Select -->
+					<select name="" id="">
+						<option value="">Male</option>
+						<option value="">Female</option>
+					</select>
+				</section>
+				<section class="filters-block">
+					<h3 class="filters-list__expander">Brands</h3>
+					<ul class="filters-list">
+						<li class="filters-list__item"><label class="filters-list__label"><input class="filters-list__checkbox" type="checkbox">Gazelle</label></li>
+						<li class="filters-list__item"><label class="filters-list__label"><input class="filters-list__checkbox" type="checkbox">Batavus</label></li>
+						<li class="filters-list__item"><label class="filters-list__label"><input class="filters-list__checkbox" type="checkbox">Sparta</label></li>
+						<li class="filters-list__item"><label class="filters-list__label"><input class="filters-list__checkbox" type="checkbox">Flyer</label></li>
+						<li class="filters-list__item"><label class="filters-list__label"><input class="filters-list__checkbox" type="checkbox">Cortina</label></li>
+						<li class="filters-list__item"><label class="filters-list__label"><input class="filters-list__checkbox" type="checkbox">Idworx</label></li>
+						<li class="filters-list__item"><label class="filters-list__label"><input class="filters-list__checkbox" type="checkbox">Giant</label></li>
+						<li class="filters-list__item"><label class="filters-list__label"><input class="filters-list__checkbox" type="checkbox">Koga</label></li>
+						<li class="filters-list__item"><label class="filters-list__label"><input class="filters-list__checkbox" type="checkbox">Cube</label></li>
+					</ul>
+					<div class="link-action"><a href="#">Meer...</a></div>	
+				</section>
+
+				<section class="filters-block">
+					<h3 class="filters-list__expander">Price range</h3>
+					<form action="" class="range-filter">
+						<div class="range-slider">
+							<input type="range" min="0" max="5000" step="1" value="100">
+						</div>
+						<div class="range-inputs">
+							<input type="text">
+							<input type="text">
+							<button>Ok</button>
+						</div>
+					</form>
+				</section>
+
+				<section class="filters-block">
+					<h3 class="filters-list__expander">Colors</h3>
+					<ul class="filters-list">
+						<li class="filters-list__item"><label class="filters-list__label"><input class="filters-list__checkbox" type="checkbox">Zwart</label></li>
+						<li class="filters-list__item"><label class="filters-list__label"><input class="filters-list__checkbox" type="checkbox">Bruin</label></li>
+						<li class="filters-list__item"><label class="filters-list__label"><input class="filters-list__checkbox" type="checkbox">Grijs</label></li>
+						<li class="filters-list__item"><label class="filters-list__label"><input class="filters-list__checkbox" type="checkbox">Wit</label></li>
+						<li class="filters-list__item"><label class="filters-list__label"><input class="filters-list__checkbox" type="checkbox">Blauw</label></li>
+						<li class="filters-list__item"><label class="filters-list__label"><input class="filters-list__checkbox" type="checkbox">Paars</label></li>
+						<li class="filters-list__item"><label class="filters-list__label"><input class="filters-list__checkbox" type="checkbox">Rood</label></li>
+						<li class="filters-list__item"><label class="filters-list__label"><input class="filters-list__checkbox" type="checkbox">Roze</label></li>
+						<li class="filters-list__item"><label class="filters-list__label"><input class="filters-list__checkbox" type="checkbox">Oranje</label></li>
+						<li class="filters-list__item"><label class="filters-list__label"><input class="filters-list__checkbox" type="checkbox">Geel</label></li>
+					</ul>
+					<div class="link-action"><a href="#">Meer...</a></div>	
+				</section>
+			</aside>
+
+			<!-- RIGHT -->
+			<section class="right-column">
+
+				<section class="view-settings">
+					<div class="products-counter"><span>130</span> products in selection</div>
+					<div class="view-mode">
+						<span class="view-mode__span">View:</span>
+						<a href="#" class="view-mode__switcher list"></a>
+						<a href="#" class="view-mode__switcher grid"></a>
+					</div>
+					<form action="" class="sorting">
+						<label for="sorting-mode" class="sorting__label"></label>
+						<select name="sorting-mode" id="sorting-mode">
+							<option value="price-asc">Price - ascending</option>
+							<option value="price-desc">Price - descending</option>
+						</select>
+					</form>
+				</section>
+
+				<section class="product-grid">
+					
+					<div class="product">
+						<div class="product__image-wrapper">
+							<img class="product__image" src="images/pic/product-image.jpg" alt="product__image">	
+						</div>
+						<p class="product__title"><a href="#"><strong>Mongoose Agatz Elite Black</strong></a></p>
+						<p class="product__attributes">Rim | Mongoose | 28"</p>
+						<p class="product__stock-counter"><strong>50 in stock</strong></p>
+						<div class="product__price">
+								<span class="product__action-price">€ 686,25</span>
+								<span class="product__sales-price">€ 686,<sup>25</sup></span>
+						</div>
+						<!-- <p class="product__price">€ 686,25</p> -->
+						<button class="add-button">Add to basket</button>
+					</div>
+
+					<div class="product">
+						<div class="product__image-wrapper">
+							<img class="product__image" src="images/pic/product-image.jpg" alt="product__image">	
+						</div>
+						<p class="product__title"><a href="#"><strong>Mongoose Agatz Elite Black</strong></a></p>
+						<p class="product__attributes">Rim | Mongoose | 28"</p>
+						<p class="product__stock-counter"><strong>50 in stock</strong></p>
+						<div class="product__price">
+								<span class="product__action-price">€ 686,25</span>
+								<span class="product__sales-price">€ 686,<sup>25</sup></span>
+						</div>
+						<!-- <p class="product__price">€ 686,25</p> -->
+						<button class="add-button">Add to basket</button>
+					</div>
+
+					<div class="product">
+						<div class="product__image-wrapper">
+							<img class="product__image" src="images/pic/product-image.jpg" alt="product__image">	
+						</div>
+						<p class="product__title"><a href="#"><strong>Mongoose Agatz Elite Black</strong></a></p>
+						<p class="product__attributes">Rim | Mongoose | 28"</p>
+						<p class="product__stock-counter"><strong>50 in stock</strong></p>
+						<div class="product__price">
+								<span class="product__action-price">€ 686,25</span>
+								<span class="product__sales-price">€ 686,<sup>25</sup></span>
+						</div>
+						<!-- <p class="product__price">€ 686,25</p> -->
+						<button class="add-button">Add to basket</button>
+					</div>
+
+					<div class="product">
+						<div class="product__image-wrapper">
+							<img class="product__image" src="images/pic/product-image.jpg" alt="product__image">	
+						</div>
+						<p class="product__title"><a href="#"><strong>Mongoose Agatz Elite Black</strong></a></p>
+						<p class="product__attributes">Rim | Mongoose | 28"</p>
+						<p class="product__stock-counter"><strong>50 in stock</strong></p>
+						<div class="product__price">
+								<span class="product__action-price">€ 686,25</span>
+								<span class="product__sales-price">€ 686,<sup>25</sup></span>
+						</div>
+						<!-- <p class="product__price">€ 686,25</p> -->
+						<button class="add-button">Add to basket</button>
+					</div>
+
+					<div class="product">
+						<div class="product__image-wrapper">
+							<img class="product__image" src="images/pic/product-image.jpg" alt="product__image">	
+						</div>
+						<p class="product__title"><a href="#"><strong>Mongoose Agatz Elite Black</strong></a></p>
+						<p class="product__attributes">Rim | Mongoose | 28"</p>
+						<p class="product__stock-counter"><strong>50 in stock</strong></p>
+						<div class="product__price">
+								<span class="product__action-price">€ 686,25</span>
+								<span class="product__sales-price">€ 686,<sup>25</sup></span>
+						</div>
+						<!-- <p class="product__price">€ 686,25</p> -->
+						<button class="add-button">Add to basket</button>
+					</div>
+
+					<div class="product">
+						<div class="product__image-wrapper">
+							<img class="product__image" src="images/pic/product-image.jpg" alt="product__image">	
+						</div>
+						<p class="product__title"><a href="#"><strong>Mongoose Agatz Elite Black</strong></a></p>
+						<p class="product__attributes">Rim | Mongoose | 28"</p>
+						<p class="product__stock-counter"><strong>50 in stock</strong></p>
+						<div class="product__price">
+								<span class="product__action-price">€ 686,25</span>
+								<span class="product__sales-price">€ 686,<sup>25</sup></span>
+						</div>
+						<!-- <p class="product__price">€ 686,25</p> -->
+						<button class="add-button">Add to basket</button>
+					</div>
+
+					<div class="product">
+						<div class="product__image-wrapper">
+							<img class="product__image" src="images/pic/product-image.jpg" alt="product__image">	
+						</div>
+						<p class="product__title"><a href="#"><strong>Mongoose Agatz Elite Black</strong></a></p>
+						<p class="product__attributes">Rim | Mongoose | 28"</p>
+						<p class="product__stock-counter"><strong>50 in stock</strong></p>
+						<div class="product__price">
+								<span class="product__action-price">€ 686,25</span>
+								<span class="product__sales-price">€ 686,<sup>25</sup></span>
+						</div>
+						<!-- <p class="product__price">€ 686,25</p> -->
+						<button class="add-button">Add to basket</button>
+					</div>
+
+					<div class="product">
+						<div class="product__image-wrapper">
+							<img class="product__image" src="images/pic/product-image.jpg" alt="product__image">	
+						</div>
+						<p class="product__title"><a href="#"><strong>Mongoose Agatz Elite Black</strong></a></p>
+						<p class="product__attributes">Rim | Mongoose | 28"</p>
+						<p class="product__stock-counter"><strong>50 in stock</strong></p>
+						<div class="product__price">
+								<span class="product__action-price">€ 686,25</span>
+								<span class="product__sales-price">€ 686,<sup>25</sup></span>
+						</div>
+						<!-- <p class="product__price">€ 686,25</p> -->
+						<button class="add-button">Add to basket</button>
+					</div>
+
+					<div class="product">
+						<div class="product__image-wrapper">
+							<img class="product__image" src="images/pic/product-image.jpg" alt="product__image">	
+						</div>
+						<p class="product__title"><a href="#"><strong>Mongoose Agatz Elite Black</strong></a></p>
+						<p class="product__attributes">Rim | Mongoose | 28"</p>
+						<p class="product__stock-counter"><strong>50 in stock</strong></p>
+						<div class="product__price">
+								<span class="product__action-price">€ 686,25</span>
+								<span class="product__sales-price">€ 686,<sup>25</sup></span>
+						</div>
+						<!-- <p class="product__price">€ 686,25</p> -->
+						<button class="add-button">Add to basket</button>
+					</div>
+
+					<!-- <div class="show-next">
+						<button>Show next 25 products</button>m
+					</div> -->
+				</section>
+				
+				<section class="recent-products-wrapper">
+					<h3 class="recent-products__title">Recently viewed</h3>
+					<a href="#" class="recent-products__action-link">View all</a>
+					<a href="#" class="recent-products__action-link">Clear list</a>
+
+					<ul class="r-product-list">
+					
+						<li class="r-product">
+							<img class="r-product__image" src="images/pic/r-product-image.png" alt="product-image">
+							<div class="r-product__title"><a href="#"><strong>Mongoose Agatz Elite Black</strong></a></div>
+							<p class="r-product__attributes">Rim | Mongoose | 28"</p>
+							<div class="r-product__price">
+								<span class="r-product__action-price">€ 686,25</span>
+								<span class="r-product__sales-price">€ 686,<sup>25</sup></span>
+							</div>
+						</li>
+
+						<li class="r-product">
+							<img class="r-product__image" src="images/pic/r-product-image.png" alt="product-image">
+							<div class="r-product__title"><a href="#"><strong>Mongoose Agatz Elite Black</strong></a></div>
+							<p class="r-product__attributes">Rim | Mongoose | 28"</p>
+							<div class="r-product__price">
+								<span class="r-product__action-price">€ 686,25</span>
+								<span class="r-product__sales-price">€ 686,<sup>25</sup></span>
+							</div>
+						</li>
+
+						<li class="r-product">
+							<img class="r-product__image" src="images/pic/r-product-image.png" alt="product-image">
+							<div class="r-product__title"><a href="#"><strong>Mongoose Agatz Elite Black</strong></a></div>
+							<p class="r-product__attributes">Rim | Mongoose | 28"</p>
+							<div class="r-product__price">
+								<span class="r-product__action-price">€ 686,25</span>
+								<span class="r-product__sales-price">€ 686,<sup>25</sup></span>
+							</div>
+						</li>
+
+						
+
+					</ul>
+					
+				</section>
+
+		</section>
+		<!-- UNDER -->
+		<section class="features">
+			<ul class="features-list">
+				<li class="features-list__item returns">Free returns</li>
+				<li class="features-list__separator">/</li>
+				<li class="features-list__item shipping">free shipping on orders above $90,00</li>
+				<li class="features-list__separator">/</li>
+				<li class="features-list__item delivery">Next day delivery</li>
+				<li class="features-list__separator">/</li>
+				<li class="features-list__item payments">secure payments</li>
+			</ul>
+		</section>
+
+	</main>
+	<!-- Page footer -->
+	<footer class="footer">
+		
+			<section class="footer__top">
+				<section class="footer-column sitemap">
+					<h3 class="footer-column__title">Sitemap</h3>
+					<ul class="footer-column__list">
+						<li class="sitemap__item"><a class="sitemap__link" href="#">Home</a></li>
+						<li class="sitemap__item"><a class="sitemap__link" href="#">My account</a></li>
+						<li class="sitemap__item"><a class="sitemap__link" href="#">Basket</a></li>
+						<li class="sitemap__item"><a class="sitemap__link" href="#">Wishlist</a></li>
+						<li class="sitemap__item"><a class="sitemap__link" href="#">Help</a></li>
+						<li class="sitemap__item"><a class="sitemap__link" href="#">Contact us</a></li>
+						<li class="sitemap__item"><a class="sitemap__link" href="#">Customer service</a></li>
+						<li class="sitemap__item"><a class="sitemap__link" href="#">Now on sale</a></li>
+					</ul>
+				</section>
+
+				<section class="footer-column social">
+					<h3 class="footer-column__title">Social media</h3>
+					<ul class="footer-column__list">
+						<!-- Twitter -->
+						<li class="social__item"><a class="social__link twitter fa fa-twitter" href="#" title="Twitter"></a></li>
+						<!-- Pinterest -->
+						<li class="social__item"><a class="social__link pinterest fa fa-pinterest" href="#" title="Pinterest"></a></li>
+						<!-- Facebook -->
+						<li class="social__item"><a class="social__link facebook fa fa-facebook" href="#" title="Facebook"></a></li>
+						<!-- Google plus -->
+						<li class="social__item"><a class="social__link google-plus fa fa-google-plus" href="#" title="Google Plus"></a></li>
+						<!-- Linkedin -->
+						<li class="social__item"><a class="social__link linkedin fa fa-linkedin" href="#" title="Linkedin"></a></li>
+					</ul>
+				</section>
+
+				<section class="footer-column subscribe">
+					<h3 class="footer-column__title">Subscribe to our newsletter</h3>
+					<p class="subscribe__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliqua lorem enim, fermentum semper viverra t amet.</p>
+					<form action="" class="subscribe-form">
+						<input class="subscribe-form__text" placeholder="Enter e-mail address ..." type="text"><button class="subscribe-form__submit" type="submit">Subscribe</button>
+					</form>
+				</section>
+			</section>
+
+			<section class="footer__bottom">
+				<section class="copyrights">© Copyright 2017 Sana Commerce. All rights reserved.</section>
+				<section class="footer-links">
+					<a class="footer-links__link" href="#">About us</a>
+					<a class="footer-links__link" href="#">Contact us</a>
+					<a class="footer-links__link" href="#">Help</a>
+					<a class="footer-links__link" href="#">Privacy policy</a>
+					<a class="footer-links__link" href="#">Disclaimer</a>
+					<a class="footer-links__link" href="#">New item</a>
+				</section>
+			</section>
+		
+	</footer>
+	
+	<!-- Import jquery lib -->
+	<script
+  		src="https://code.jquery.com/jquery-2.2.4.js"
+		integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+		crossorigin="anonymous"></script>
+	<script src="scripts/main.js"></script>
+</body>
+</html>
