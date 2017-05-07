@@ -1,0 +1,76 @@
+html, 
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Oxygen', sans-serif;
+	font-size: 12px;
+	font-weight: 400;
+}
+
+/*
+	need styles:
+		[font colors]
+			#000000 headings text (h1-h6)
+			#333333 bold text
+			#b2b2b2 normal text
+			#cb2245 required info
+			#1f7bc9 links, button-active
+			#2289e3	button-hover
+			#f78400 button-active
+			#f09630 button-hover
+*/
+
+* {
+	box-sizing: border-box;
+}
+
+/* 
+	Typography
+*/
+h1, .h1,
+h2, .h2,
+h3, .h3 {
+	font-family: 'Pathway Gothic One', sans-serif;
+}
+
+/* is it good naming? */
+.basic-text {
+	font-family: 'Oxygen', sans-serif;
+	/*
+	+ font-size
+	+ line-height
+	*/
+}
+
+/*
+	Hypertext links
+*/
+
+a {
+	color: #1f7bc9;
+	text-decoration: none;
+}
+
+/*
+	Buttons collection
+*/
+
+/*
+	Reset unnecessary list-style presentation for <ul>
+*/
+.dropdown-menu,
+.menu,
+.sub-menu,
+.active-filters__list,
+.filters-list,
+.r-product-list,
+.features-list,
+.footer-column__list { 
+	list-style: none;
+	margin: 0;
+}
+
+/*
+	#f7f7f7
+	#f2f2f2
+*/
