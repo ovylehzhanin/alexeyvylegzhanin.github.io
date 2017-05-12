@@ -1,0 +1,32 @@
+@import url("fonts.css");
+
+html, body {
+	margin: 0;
+	padding: 0;
+	font-family: "SegoeUIRegular", sans-serif;
+	font-size: 14px;
+}
+
+h1 {
+	font-family: "SegoeUIBold", sans-serif;
+	font-size: 2rem;
+	text-transform: uppercase;
+}
+
+h3 {
+	font-family: "SegoeUISemiBold", sans-serif;
+	font-size: 1.285714285714286rem; /* 18px / 14px */
+}
+
+.contact-links {
+	list-style: none;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+}
+
+.contact-links a {
+	display: block;
+	width: 30px;
+	height: 30px;
+}
