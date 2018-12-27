@@ -1,0 +1,58 @@
+html, body {
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --flickr-blue: rgba(0, 99, 219, 1);
+  --flickr-purple: rgba(255, 0, 132, 1);
+  --white: #ffffff;
+}
+
+.page-body {
+  min-height: 100vh;
+  background-image: url('./assets/photography.png');
+  background-repeat: repeat;
+  background-position: 0 0;
+  overflow-y: scroll;
+}
+
+.page-header {
+  margin: 0 auto;
+  width: 95%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 1rem 0;
+}
+
+@media (min-width: 768px) {
+  .page-header {
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+}
+
+@media (min-width: 1024px) {
+  .page-header {
+    width: 80%;
+  }
+}
+
+.page-logo {
+  width: 200px;
+  position: relative;
+  margin: 0 0 .5rem 0;
+}
+
+@media (min-width: 768px) {
+  .page-logo {
+    width: 150px;
+    margin: 0;
+  }
+}
+
+.page-logo__image {
+  display: block;
+  max-width: 100%;
+}
